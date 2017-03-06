@@ -23,7 +23,7 @@
 //////////////////
 
 <style lang="css">
-  .classSelect #idSelector h3:nth-child(10) {
+  .classSelect > #idSelector + h3:nth-child(10) {
     content: 'content';
     text-align: left;
     padding: 10px;
@@ -31,26 +31,34 @@
 </style>
 
 <style lang="less">
-  .classSelect #idSelector h3:nth-child(10) {
+  .classSelect > #idSelector + h3:nth-child(10) {
     content: 'content';
     text-align: left;
     padding: 10px;
+    &__elocze {
+      display: none;
+    }
   }
 </style>
 
 <style lang="scss">
-  .classSelect #idSelector h3:nth-child(10) {
+  .classSelect > #idSelector + h3:nth-child(10) {
     content: 'content';
     text-align: left;
     padding: 10px;
+    & > .main {
+      display: none;
+    }
+    @extend .main;
   }
 </style>
 
 <style lang="sass">
-  .classSelect #idSelector h3:nth-child(10)
-    content: 'content';
-    text-align: left;
-    padding: 10px;
+  .classSelect > #idSelector + h3:nth-child(10)
+    content: 'content'
+    text-align: left
+    padding: 10px
+    +transform(translate(10))
 </style>
 
 
@@ -60,7 +68,6 @@
   class Main {
 
     // Special constructor function
-    // Variable = white, function = blue
     constructor({config, callback}) {
       this.config   = config;
       this.callback = (time) => {

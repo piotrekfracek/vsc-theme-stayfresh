@@ -25,6 +25,26 @@
         "label": "stayfresh-main",
         "uiTheme": "vs-dark",
         "path": "./themes/stayfresh-main.tmTheme"
+      },
+      {
+        "label": "stayfresh-blue",
+        "uiTheme": "vs-dark",
+        "path": "./themes/stayfresh-blue.tmTheme"
+      },
+      {
+        "label": "stayfresh-warm",
+        "uiTheme": "vs-dark",
+        "path": "./themes/stayfresh-warm.tmTheme"
+      },
+      {
+        "label": "stayfresh-lowcontrast",
+        "uiTheme": "vs-dark",
+        "path": "./themes/stayfresh-lowcontrast.tmTheme"
+      },
+      {
+        "label": "stayfresh-highcontrast",
+        "uiTheme": "vs-dark",
+        "path": "./themes/stayfresh-highcontrast.tmTheme"
       }
     ]
   }
