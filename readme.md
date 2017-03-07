@@ -1,4 +1,4 @@
-![](readme.images/3Nfxsv.jpg)
+![](https://raw.githubusercontent.com/piotrekfracek/vsc-theme-stayfresh/master/readme.images/3Nfxsv.jpg)
 
 Visual Studio Code theme.
 
@@ -18,4 +18,4 @@ Visual Studio Code theme.
 
  
 
-![](readme.images/UrbU2q.png)
+![](https://raw.githubusercontent.com/piotrekfracek/vsc-theme-stayfresh/master/readme.images/UrbU2q.png)
