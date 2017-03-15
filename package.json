@@ -2,7 +2,7 @@
   "name": "theme-stayfresh",
   "displayName": "theme-stayfresh",
   "description": "Just nice fresh theme",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "publisher": "piotrekfracek",
   "dependencies": {
     "chokidar": "^1.6.1",
