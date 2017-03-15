@@ -42,9 +42,20 @@
 </dict>
 <dict>
     <key>name</key>
+    <string>Square brace</string>
+    <key>scope</key>
+    <string>meta.brace.square, punctuation.definition.binding-pattern</string>
+    <key>settings</key>
+    <dict>
+        <key>foreground</key>
+        <string>#ACB8EB</string>
+    </dict>
+</dict>
+<dict>
+    <key>name</key>
     <string>Expression</string>
     <key>scope</key>
-    <string>meta.template.expression.js, support.variable.property.dom.js, support.class.builtin.js, support.constant.math.js</string>
+    <string>meta.template.expression, support.variable.property.dom, support.class.builtin, support.constant.math</string>
     <key>settings</key>
     <dict>
         <key>foreground</key>
@@ -64,9 +75,20 @@
 </dict>
 <dict>
     <key>name</key>
+    <string>Built-in constant</string>
+    <key>scope</key>
+    <string>constant.language</string>
+    <key>settings</key>
+    <dict>
+        <key>foreground</key>
+        <string>#FDFD45</string>
+    </dict>
+</dict>
+<dict>
+    <key>name</key>
     <string>Boolean</string>
     <key>scope</key>
-    <string>constant.language.boolean.true.js</string>
+    <string>constant.language.boolean.true, constant.language.boolean.false</string>
     <key>settings</key>
     <dict>
         <key>foreground</key>
@@ -75,13 +97,13 @@
 </dict>
 <dict>
     <key>name</key>
-    <string>Built-in constant</string>
+    <string>Undefined and null</string>
     <key>scope</key>
-    <string>constant.language</string>
+    <string>constant.language.undefined, constant.language.null</string>
     <key>settings</key>
     <dict>
         <key>foreground</key>
-        <string>#FDFD45</string>
+        <string>#FDCF4E</string>
     </dict>
 </dict>
 <dict>
@@ -349,7 +371,7 @@
     <key>name</key>
     <string>Punctuation</string>
     <key>scope</key>
-    <string>punctuation.accessor.js, punctuation.definition.block.js, punctuation.separator.key-value.js,punctuation.terminator.statement.js, punctuation.separator.comma, punctuation.terminator,meta.brace.round, punctuation.definition.parameters.begin.js, punctuation.definition.parameters.end.js</string>
+    <string>punctuation.accessor, punctuation.definition.block, punctuation.separator.key-value,punctuation.terminator.statement, punctuation.separator.comma, punctuation.terminator,meta.brace.round, punctuation.definition.parameters.begin, punctuation.definition.parameters.end,punctuation.definition.template-expression</string>
     <key>settings</key>
     <dict>
         <key>foreground</key>
@@ -369,9 +391,20 @@
 </dict>
 <dict>
     <key>name</key>
+    <string>Node support</string>
+    <key>scope</key>
+    <string>support.variable.object.node.js</string>
+    <key>settings</key>
+    <dict>
+        <key>foreground</key>
+        <string>#C59FFB</string>
+    </dict>
+</dict>
+<dict>
+    <key>name</key>
     <string>Comment</string>
     <key>scope</key>
-    <string>comment, comment.line.double-slash.js, punctuation.definition.comment.js</string>
+    <string>comment, comment.line.double-slash, punctuation.definition.comment</string>
     <key>settings</key>
     <dict>
         <key>foreground</key>
@@ -459,6 +492,17 @@
 </dict>
 <dict>
     <key>name</key>
+    <string>Function style</string>
+    <key>scope</key>
+    <string>variable.scss, meta.variable-usage.sass, meta.variable-declaration.sass, variable.other.sass</string>
+    <key>settings</key>
+    <dict>
+        <key>foreground</key>
+        <string>#FDCF4E</string>
+    </dict>
+</dict>
+<dict>
+    <key>name</key>
     <string>Markdown sections</string>
     <key>scope</key>
     <string>entity.name.section.markdown, punctuation.definition.heading.markdown, markup.heading</string>
@@ -512,6 +556,39 @@
     <dict>
         <key>foreground</key>
         <string>#ACB8EB</string>
+    </dict>
+</dict>
+<dict>
+    <key>name</key>
+    <string>JSDoc Instance</string>
+    <key>scope</key>
+    <string>storage.type.class.jsdoc</string>
+    <key>settings</key>
+    <dict>
+        <key>foreground</key>
+        <string>#CD94D9</string>
+    </dict>
+</dict>
+<dict>
+    <key>name</key>
+    <string>JSDoc Instance</string>
+    <key>scope</key>
+    <string>entity.name.type.instance.jsdoc</string>
+    <key>settings</key>
+    <dict>
+        <key>foreground</key>
+        <string>#B6AEF1</string>
+    </dict>
+</dict>
+<dict>
+    <key>name</key>
+    <string>JSDoc Variable</string>
+    <key>scope</key>
+    <string>variable.other.jsdoc</string>
+    <key>settings</key>
+    <dict>
+        <key>foreground</key>
+        <string>#CCD4A9</string>
     </dict>
 </dict>
   </array>

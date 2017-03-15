@@ -4,7 +4,7 @@ const fs    = require('fs');
 [
 
   ['stayfresh-main.tmTheme', 'stayfresh-main', 'dark', '8eb04258-3f97-491b-bc97-9ba818a355e8', [
-    '#ffffff', '#444444', '#3B3A32', '#2D2E35', '#222326', '#53437B', '#556270',
+    '#ffffff', '#444444', '#3B3A32', '#2D2E35', '#222326', '#7259B1', '#556270',
     '#d9ff85', '#fad057', '#fbfa5f', '#c5a3f5', '#ff62ad', '#50e3d9', '#b5bacf',
   ]],
 
@@ -19,12 +19,12 @@ const fs    = require('fs');
   ]],
 
   ['stayfresh-lowcontrast.tmTheme', 'stayfresh-lowcontrast', 'dark', '8eb04258-3f97-491b-bc97-9ba818a355e1', [
-    '#ffffff', '#45565A', '#3D4C45', '#31404B', '#28353B', '#545495', '#547587',
+    '#ffffff', '#45565A', '#3D4C45', '#31404B', '#28353B', '#7259B1', '#547587',
     '#D4FF8B', '#FFD85B', '#FDFD60', '#C5AEFF', '#FF70C1', '#42ECE3', '#B1C5DC',
   ]],
 
   ['stayfresh-highcontrast.tmTheme', 'stayfresh-highontrast', 'dark', '8eb04258-3f97-491b-bc97-9ba818a355e2', [
-    '#ffffff', '#3B3B3B', '#313024', '#21222C', '#15161B', '#4E3787', '#495C70',
+    '#ffffff', '#3B3B3B', '#313024', '#21222C', '#15161B', '#7259B1', '#495C70',
     '#D7FF5F', '#FFD427', '#FFFF29', '#CF9EFF', '#FF4FBA', '#22F4E5', '#B5BCDA',
   ]],
 

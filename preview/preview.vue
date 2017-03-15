@@ -80,8 +80,10 @@
       const currentVer = await Processor.fetchVersion();
       const {id, time} = data;
       return Processor(currentVer).prepare({
-        id:   id,
-        time: time,
+        id:    id,
+        time:  time,
+        true:  true,
+        false: false,
       });
     }
 

@@ -1,5 +1,6 @@
 const parser = require('./parser');
 const rule   = require('./rule');
+const Color  = require('color');
 
 module.exports = function(name, style, uuid, colors) {
   return parser(
@@ -22,10 +23,12 @@ module.exports = function(name, style, uuid, colors) {
     [
       //   Name                       Scope                                                                                                                      Foreground          Additional styles
       rule('String',                  'string',                                                                                                                  colors[7],          []),
-      rule('Expression',              'meta.template.expression.js, support.variable.property.dom.js, support.class.builtin.js, support.constant.math.js',       colors[0],          []),
+      rule('Square brace',            'meta.brace.square, punctuation.definition.binding-pattern',                                                               colors[13],         []),
+      rule('Expression',              'meta.template.expression, support.variable.property.dom, support.class.builtin, support.constant.math',                   colors[0],          []),
       rule('Number',                  'constant.numeric',                                                                                                        colors[8],          []),
-      rule('Boolean',                 'constant.language.boolean.true.js',                                                                                       colors[8],          []),
       rule('Built-in constant',       'constant.language',                                                                                                       colors[9],          []),
+      rule('Boolean',                 'constant.language.boolean.true, constant.language.boolean.false',                                                         colors[8],          []),
+      rule('Undefined and null',      'constant.language.undefined, constant.language.null',                                                                     colors[8],          []),
       rule('User-defined constant',   'constant.character, constant.other, constant.id.tag.jade',                                                                colors[10],         []),
       rule('Keyword',                 'keyword',                                                                                                                 colors[11],         []),
       rule('Storage',                 'storage',                                                                                                                 colors[11],         []),
@@ -50,12 +53,14 @@ module.exports = function(name, style, uuid, colors) {
       rule('Js object key',           'meta.object-literal.key.js',                                                                                              colors[0],          [['fontStyle', 'italic']]),
       rule('XMLTagss',                'punctuation.definition.tag.html, constant.name.attribute.tag.jade, punctuation.definition.tag.xml,' +
                                       'punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html',                                              colors[13],         []),
-      rule('Punctuation',             'punctuation.accessor.js, punctuation.definition.block.js, punctuation.separator.key-value.js,' +
-                                      'punctuation.terminator.statement.js, punctuation.separator.comma, punctuation.terminator,' +
-                                      'meta.brace.round, punctuation.definition.parameters.begin.js, punctuation.definition.parameters.end.js',                  colors[13],         []),
+      rule('Punctuation',             'punctuation.accessor, punctuation.definition.block, punctuation.separator.key-value,' +
+                                      'punctuation.terminator.statement, punctuation.separator.comma, punctuation.terminator,' +
+                                      'meta.brace.round, punctuation.definition.parameters.begin, punctuation.definition.parameters.end,' +
+                                      'punctuation.definition.template-expression',                                                                              colors[13],         []),
       rule('Functions',               'entity.name.function, meta.require, support.function.any-method, meta.function-call, support.function,' +
                                       'keyword.other.special-method, meta.block-level, meta.function-call.method.with-arguments variable.function',              colors[12],         []),
-      rule('Comment',                 'comment, comment.line.double-slash.js, punctuation.definition.comment.js',                                                colors[6],          []),
+      rule('Node support',            'support.variable.object.node.js',                                                                                         colors[10],         []),
+      rule('Comment',                 'comment, comment.line.double-slash, punctuation.definition.comment',                                                      colors[6],          []),
       // Styles
       rule('Css flow selector',       'source.css, keyword.operator.combinator.css, keyword.operator.less',                                                      colors[0],          []),
       rule('Css pseudo class',        'entity.other.attribute-name.pseudo-class, entity.other.attribute-name.pseudo-element',                                    colors[7],          []),
@@ -66,12 +71,17 @@ module.exports = function(name, style, uuid, colors) {
       rule('Css values',              'constant.numeric.css, constant.numeric.scss, constant.numeric.sass,' +
                                       'string.quoted.double.css.sass, support.constant.property-value.css,' +
                                       'constant.other.rgb-value.css, support.constant.property-value.scss',                                                      colors[0],          [['fontStyle', 'bold']]),
+      rule('Function style',          'variable.scss, meta.variable-usage.sass, meta.variable-declaration.sass, variable.other.sass',                            colors[8],          []),
       // Markdown
       rule('Markdown sections',       'entity.name.section.markdown, punctuation.definition.heading.markdown, markup.heading',                                   colors[11],         []),
       rule('Markdown list',           'beginning.punctuation.definition.list.markdown',                                                                          colors[8],          []),
       rule('Markdown def',            'punctuation.definition.markdown',                                                                                         colors[10],         []),
       rule('Markdown bold',           'markup.bold.markdown',                                                                                                    colors[0],          [['fontStyle', 'bold']]),
       rule('Markdown raw',            'meta.separator.markdown, markup.raw.block.markdown, markup.raw.inline.markdown',                                          colors[13],         []),
+      // JS Doc
+      rule('JSDoc Instance',          'storage.type.class.jsdoc',                                                                                                Color(colors[11]).mix(Color(colors[13]), 0.4).hex(),  []),
+      rule('JSDoc Instance',          'entity.name.type.instance.jsdoc',                                                                                         Color(colors[10]).mix(Color(colors[13]), 0.4).hex(),  []),
+      rule('JSDoc Variable',          'variable.other.jsdoc',                                                                                                    Color(colors[9]).mix(Color(colors[13]), 0.4).hex(),  []),
     ]
   )
 }

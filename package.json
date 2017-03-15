@@ -1,11 +1,12 @@
 {
   "name": "theme-stayfresh",
   "displayName": "theme-stayfresh",
-	"description": "Just nice fresh theme",
+  "description": "Just nice fresh theme",
   "version": "1.0.4",
   "publisher": "piotrekfracek",
   "dependencies": {
     "chokidar": "^1.6.1",
+    "color": "^1.0.3",
     "lighter-spawn": "^1.0.0",
     "xml": "^1.0.1"
   },
@@ -16,15 +17,15 @@
   "engines": {
     "vscode": "^1.5.0"
   },
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/piotrekfracek/vsc-theme-stayfresh"
-	},
-	"icon": "icon.png",
-	"files": [
-		"icon.png",
-		"themes"
-	],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/piotrekfracek/vsc-theme-stayfresh"
+  },
+  "icon": "icon.png",
+  "files": [
+    "icon.png",
+    "themes"
+  ],
   "categories": [
     "Themes"
   ],
